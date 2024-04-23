@@ -19,7 +19,7 @@ public class Employee {
 	private int monthWorkingInYear;
 	
 	private boolean isForeigner;
-	private boolean gender; //true = Laki-laki, false = Perempuan
+	private Gender gender;
 	
 	private int monthlySalary;
 	private int otherMonthlyIncome;
@@ -102,4 +102,9 @@ public class Employee {
 		
 		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear, annualDeductible, spouseIdNumber.equals(""), childIdNumbers.size());
 	}
+
+	public enum Gender {
+        MALE,
+        FEMALE
+    }
 }
