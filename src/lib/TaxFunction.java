@@ -2,6 +2,9 @@ package lib;
 
 public class TaxFunction {
 
+	private static final int NON_TAXABLE_INCOME_SINGLE = 54000000;
+    private static final int NON_TAXABLE_INCOME_MARRIED = 58500000; // 54000000 + 4500000
+    private static final int NON_TAXABLE_INCOME_PER_CHILD = 1500000;
 	
 	/**
 	 * Fungsi untuk menghitung jumlah pajak penghasilan pegawai yang harus dibayarkan setahun.
